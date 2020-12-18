@@ -317,7 +317,7 @@ input{
     
 }
 
-@media all and (max-width: 1200px) and (min-width: 1015.1px){
+@media all and (max-width: 1200px){
     #choices{
         width: calc(100% - 3rem);
     }
@@ -373,12 +373,12 @@ input{
     }
 }
 
-@media all and (max-width: 961px) and (min-width: 818.1px){
+@media all and (max-width: 961px){
     #instruction{
         padding-top: 12px;
     }
 }
-@media all and (max-width: 818px) and (min-width: 611.1px){
+@media all and (max-width: 818px){
     #question{
         height: 100px;
         font-size: 70px;
@@ -414,7 +414,7 @@ input{
     }
 }
 
-@media all and (max-width: 611px) and (min-width: 528.1px){
+@media all and (max-width: 611px){
     #instruction{
         height: 75px;
         padding-top: 3px;
@@ -422,6 +422,10 @@ input{
     
     .main-container{
         margin-top: 330px;
+    }
+    
+    #remain{
+        display: none;
     }
     
     .first-container{
@@ -571,7 +575,7 @@ input{
         
     }
     #timeremaining{
-        left: 15%;
+        left: 30%;
     }
     
 }
