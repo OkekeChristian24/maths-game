@@ -365,7 +365,7 @@ input{
         font-size: 1.5rem;
     }
     #choices{
-        width: calc(100% - 1rem);
+        width: calc(120%);
     }
     .box{
         height: 60px;
@@ -547,6 +547,9 @@ input{
 }
 
 @media all and (max-width: 413px){
+    #choices{
+        width: 150%;
+    }
     .box{
         width: 50px;
         margin-right: 26px;
