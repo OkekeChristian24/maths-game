@@ -559,8 +559,11 @@ input{
 }
 
 @media all and (max-width: 363px){
+    #choices{
+        width: 150%;
+    }
     .box{
-        width: 50px;
+        width: 45px;
         margin-right: 11px;
         
     }
