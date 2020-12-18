@@ -1,0 +1,72 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chris Maths Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+     
+    <body>
+        <div id="instruction">
+           <h3>Welcome to Chris' Arithmetic Maths Game</h3>
+           <p>Press the 'Start Game' button below to start the game.</p>
+            <p>Click on the correct answer to score a point.</p>
+        </div>
+        <div class="main-container">
+            <div class="first-container">
+                <div id="scoreboard">
+                  <h3>Top 5 scores</h3>
+                  <div id="topscores"></div>
+                </div>
+                <div id="deletebtn">
+                    <button onclick="deleteScores()">Clear Scores</button>
+                </div>  
+                <div class="time-form">
+                        <p>Set Time</p>
+                        <select id="setTime">
+                            <option value="10">10 sec</option>
+                            <option value="30">30 sec</option>
+                            <option value="60" selected>60 sec</option>
+                            <option value="300">300 sec</option>
+                        </select>
+                </div>
+            </div>
+          
+            <div class="second-container" id="container">
+               <div id="score">
+                    Score: <span id="scorevalue">0</span>
+                </div>
+                <div id="notify">
+                    Click on the 'Start Game' button below to start the game!
+                </div>
+                <div id="correct">
+                    Correct
+                </div>
+                <div id="wrong">
+                    Try again
+                </div>
+                <div id="question">
+
+                </div>
+                <div id="choices">
+                    <div id="box1" class="box"></div>
+                    <div id="box2" class="box"></div>
+                    <div id="box3" class="box"></div>
+                    <div id="box4" class="box"></div>
+                </div>
+                <div id="startreset">
+                    Start Game
+                </div>
+                <div id="timeremaining">
+                    Time <span id="remain">remaining</span>: <span id="timeremainingvalue"></span> sec
+                </div>
+                <div id="gameOver">
+
+                </div>
+            </div>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>

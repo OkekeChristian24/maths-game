@@ -1,0 +1,553 @@
+/*styling.css*/
+html{
+    height: 100%;
+    
+    background: #f3f3f3;
+    
+}
+
+
+.main-container{
+    margin-top: 160px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-container{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    margin-top: -290px;
+    margin-left: 40px;
+}
+
+#scoreboard{
+    border: 1px solid #677577;
+    border-radius: 7px;
+    padding: 6px;
+    background-color: #F1FF92;
+    color: #454545;
+}
+
+#scoreboard h3{
+    margin: 4px auto;
+}
+
+p.score{
+    text-align: center;
+    padding: 0;
+    padding-top: 3px;
+    margin: 0;
+    border-top: 1px solid #999;
+}
+
+#deletebtn{
+    bottom: 0;
+}
+
+#deletebtn button{
+    border-radius: 9px;
+    cursor: pointer;
+    height: 35px;
+    font-size: 15px;
+    color: #444444;
+    border: 2px inset #ccc;
+    background-color: #66ccff;
+    margin-top: 9px;
+}
+
+
+.time-form{
+    margin-top: 12px;
+    margin-left: 13px;
+}
+
+.time-form p{
+    margin: 0;
+}
+
+select{
+    height: 30px;
+    font-weight: bold;
+}
+
+input{
+    height: 30px;
+    border-radius: 7px;
+    width: 49px;
+}
+#deletebtn button:active{
+    border: none;
+}
+
+.second-container{
+    height: 400px;
+    width: 40%;
+    margin: 1px 57px;
+    background-color: #ccc;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+/*        box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]*/
+    position: relative;
+    margin-top: 30px;
+}
+
+#score{
+    background-color: #F1FF92;
+    color: #888E5F;
+    padding: 11px;
+    text-align: center;
+    width: 70px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 0px #9da853;
+    -moz-box-shadow: 0px 4px 0px #9da853;
+    -webkit-box-shadow: 0px 4px 0px #9da853;
+}
+
+#notify{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F3706C;
+    color: white;
+    padding: 11px;
+    display: block; 
+    border-radius: 5px;
+}
+
+#correct{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #42e252;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#wrong{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #de401a;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#question{
+    width: 95%;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background-color: #f4f4f4;
+    font-size: 100px;
+    text-align: center;
+    font-family: sans;
+    color: #222;
+    border: 6px ridge #aaa;
+}
+
+#instruction{
+    width: 500px;
+    height: 90px;
+    background-color: #1a75ff;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px auto;
+    text-align: center;
+    padding-top: 6px;
+    line-height: 2px;
+    border-radius: 4px;
+    box-shadow: 0px 4px #005ce6;
+    -moz-box-shadow: 0px 4px #005ce6;
+    -webkit-box-shadow: 0px 4px #005ce6;
+}
+
+#choices{
+    width: calc(100% - 5.5rem);
+    height: 100px;
+    margin: 5px auto;
+    padding: 0;
+}
+
+.box{
+    width: 5.7vw;
+    max-width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+
+.box:active, #startreset:active{
+    background-color: rgba(26, 117, 255);
+    color: white;
+    box-shadow: 0px 0px #6b54d3; 
+    -moz-box-shadow: 0px 0px #6b54d3; 
+    -webkit-box-shadow: 0px 0px #6b54d3; 
+    top: 4px;
+}
+
+#box4{
+    margin-right: 0px;   
+}
+
+#startreset{
+    width: 78px;
+    padding: 10px;
+    background-color: #66ccff;
+    margin: 0 auto;
+    border-radius: 9px;
+    border: 2px inset #ccc;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(204, 239, 255, 0.2);
+    -moz-box-shadow: 0px 4px rgba(204, 239, 255, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(204, 239, 255, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;   
+}
+
+#timeremaining{
+    width: 151px;
+    padding: 6px;
+    position: absolute;
+    top: 390px;
+    left: calc(100% - 11rem);
+    background-color: rgba(26, 117, 255, 0.8);
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+/*    visibility: hidden;*/
+    display: none;
+}
+
+#gameOver{
+    height: 300px;
+    width: 35.6vw;
+    background: linear-gradient(#cccccc, #ffffff);
+    background: -webkit-linear-gradient(#F3CA6B, #F3706C);
+    background: -o-linear-gradient(#F3CA6B, #F3706C);
+    background: -moz-linear-gradient(#F3CA6B, #F3706C);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 65px;
+    left: 45px;
+    z-index: 2;
+    display: none;
+    border-radius: 8px;
+}
+
+#gameOver p:first-child{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0;
+    margin: 2px;
+    width: 12px;
+    position: absolute;
+    top: 5px;
+    right: 17px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    padding: 0 4px;
+    cursor: pointer;
+}
+
+#gameOver p:nth-child(2){
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    line-height: 78px;
+    font-size: 80px;
+    width: 82px;
+    height: 82px;
+    margin: 22px auto 0 auto;
+    
+}
+
+
+/* Media Queries */
+
+@media all and (min-width: 1201px){
+    
+}
+
+@media all and (max-width: 1200px) and (min-width: 1015.1px){
+    #choices{
+        width: calc(100% - 3rem);
+    }
+    
+    .box{
+        width: calc(85% - 10.9rem + 6px);
+        height: auto;
+        margin-right: 19px;
+    }
+    
+    #remain{
+        display: none;
+    }
+    #timeremaining{
+        top: 390px;
+        left: calc(100% - 8rem);
+        width: 100px;
+    }
+    #gameOver{
+        height: 280px;
+        width: 39vw;
+        left: 20px;
+        padding-top: 18px;
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 1131px){
+    #question{
+        height: 115px;
+    }
+    
+    .box{
+        width: 62px;
+        margin-right: 39px;
+    }
+}
+
+@media all and (max-width: 1015px){
+    #gameOver{
+        height: 280px;
+        width: 39vw;
+        left: 20px;
+        padding-top: 18px;
+        font-size: 1.5rem;
+    }
+    #choices{
+        width: calc(100% - 1rem);
+    }
+    .box{
+        height: 60px;
+        line-height: 63px;
+    }
+}
+
+@media all and (max-width: 961px) and (min-width: 818.1px){
+    #instruction{
+        padding-top: 12px;
+    }
+}
+@media all and (max-width: 818px) and (min-width: 611.1px){
+    #question{
+        height: 100px;
+        font-size: 70px;
+    }
+    
+    .box{
+        width: 45px;
+        margin-right: 34px;
+        height: 50px;
+    }
+    
+    #score{
+        padding: 6px;
+    }
+    
+    #timeremaining{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    #startreset{
+        top: -20px;
+    }
+    
+    #wrong, #correct{
+        font-size: 12px;
+        padding: 7px;
+        margin-top: 7px;
+    }
+}
+
+@media all and (max-width: 611px) and (min-width: 528.1px){
+    #instruction{
+        height: 75px;
+        padding-top: 3px;
+    }
+    
+    .main-container{
+        margin-top: 330px;
+    }
+    
+    .first-container{
+        height: 100px;
+        margin-bottom: 0px;
+        margin-left: 0;
+        width: 120%;
+    }
+    
+    .second-container{
+        margin-top: 9px;
+    }
+    
+    .time-form{
+        margin-left: 19px;
+        margin-top: -80px;
+    }
+    
+    #deletebtn{
+        margin-top: -90px;
+    }
+    
+    #choices{
+        width: 120%;
+    }
+    .box{
+        height: 40px;
+        line-height: 43px;
+        width: calc
+    }
+    
+}
+
+
+@media all and (max-width: 528px){
+    
+    #question{
+        height: 65px;
+        padding-bottom: 19px;
+        font-size: 72px;
+    }
+    #instruction{
+        padding-top: 6px;
+        height: 57px;
+        font-size: 12px;
+        width: 300px;
+    }
+    .main-container{
+        margin-top: 330px;
+    }
+    
+    .first-container{
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .second-container{
+        width: 100%;
+        left: 41%;
+        transform: translateX(-46%);
+        margin: 1px 27px;
+        margin-top: -3vh;
+    }
+    
+    .time-form{
+        margin-top: 12px;
+    }
+    
+    #gameOver{
+        width: 91%;
+        font-size: 1.3rem;
+        height: 230px;
+    }
+    
+    #scoreboard{
+        font-size: 12px;
+    }
+    
+    #deletebtn button{
+        font-size: 10px;
+    }
+    
+    .box{
+        width: calc(100% - 5rem);
+        font-size: 21px;
+        margin-right: 12px
+    }
+    
+    #startreset{
+        width: 59px;
+        font-size: 12px;
+        padding: 5px;
+        top: -30px;
+    }
+    
+    #timeremaining{
+        top: 340px;
+    }
+    
+    .second-container{
+        height: 350px;
+    }
+    
+    #startreset:active{
+        top: -35px;
+    }
+}
+
+@media all and (max-width: 480px){
+    .box{
+        width: 45px;
+        margin-right: 15px;
+        
+    }
+    
+    #timeremaining{
+        left: 33%;
+    }
+}
+
+@media all and (max-width: 413px){
+    .box{
+        width: 50px;
+        margin-right: 26px;
+        
+    }
+}
+
+@media all and (max-width: 363px){
+    .box{
+        width: 50px;
+        margin-right: 9px;
+        
+    }
+}
+
+
+@media all and (max-width: 323px){
+    .box{
+        width: 35px;
+        height: 35px;
+        margin-right: 16.5px;
+        line-height: 32px;
+    }
+}
